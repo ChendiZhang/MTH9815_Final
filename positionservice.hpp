@@ -31,8 +31,9 @@ public:
   // Get the product
   const T& GetProduct() const;
 
-  // Get the position quantity
+ /* // Get the position quantity
   long GetPosition(string &book) const;
+  */
 
   // Get the aggregate position
   long GetAggregatePosition();
@@ -72,11 +73,13 @@ const T& Position<T>::GetProduct() const
   return product;
 }
 
+/*
 template<typename T>
 long Position<T>::GetPosition(string &book) const
 {
   return positions[book];
 }
+*/
 
 template<typename T>
 long Position<T>::GetAggregatePosition()
